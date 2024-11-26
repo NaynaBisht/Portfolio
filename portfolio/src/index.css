@@ -16,5 +16,6 @@
     @apply font-['Lora'];
     margin: 0;
     background-color: rgb(235, 232, 225);
+    /* background-color: #f3d182; */
   }
 }

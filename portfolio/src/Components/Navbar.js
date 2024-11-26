@@ -7,7 +7,7 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className='flex justify-between items-center w-[90%] p-1 bg-white rounded-lg mx-auto'>
+    <div className='flex justify-between items-center w-[90%] p-1 mt-6 bg-white rounded-lg mx-auto'>
         {/* Logo */}
         <img src={image} alt="logo" className='w-[6%] ml-10 ' />
 
