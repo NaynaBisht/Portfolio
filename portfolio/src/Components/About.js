@@ -14,11 +14,11 @@ function About() {
   return (
     <div className="flex flex-col items-center justify-center mt-12 px-4">
       {/* Main Content Box */}
-      <div className="relative w-[85%] min-h-[450px] bg-[#f3d182] rounded-3xl shadow-lg p-8 z-10">
-        <h1 className="text-5xl text-center underline underline-offset-8 decoration-green-900 decoration-3 font-bold transition-transform duration-300 hover:scale-105" data-aos="fade-up">
+      <div className="relative w-[85%] min-h-[450px] bg-[#f3d182] rounded-3xl shadow-lg p-8 z-10" data-aos="fade-up">
+        <h1 className="text-5xl text-center underline underline-offset-8 decoration-green-900 decoration-3 font-bold transition-transform duration-300 hover:scale-105">
           <span className="text-gray-600">About </span> Me
         </h1>
-        <p className="p-2 text-lg text-center mt-6 text-slate-700 font-semibold w-full md:w-2/3 mx-auto" data-aos="fade-up">
+        <p className="p-2 text-lg text-center mt-6 text-slate-700 font-semibold w-full md:w-2/3 mx-auto">
           I'm a passionate web developer dedicated to creating seamless and engaging web experiences by building intuitive websites that deliver real value to users while maintaining clean and efficient code.
         </p>
         <p className="p-2 text-lg text-center mt-2 text-slate-700 font-semibold w-full md:w-3/4 mx-auto">
