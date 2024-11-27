@@ -12,7 +12,7 @@ function About() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center mt-12 px-4">
+    <div className="flex flex-col items-center justify-center mt-12 px-4" id="about">
       {/* Main Content Box */}
       <div className="relative w-[85%] min-h-[450px] bg-[#f3d182] rounded-3xl shadow-lg p-8 z-10" data-aos="fade-up">
         <h1 className="text-5xl text-center underline underline-offset-8 decoration-green-900 decoration-3 font-bold transition-transform duration-300 hover:scale-105">

@@ -5,7 +5,7 @@ import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-
 
 function Home() {
   return (
-    <div className='flex p-4 justify-center items-center flex-col md:flex-row'>
+    <div className='flex p-4 justify-center items-center flex-col md:flex-row' id="home">
       <img 
         src={profile} 
         alt="Profile" 
@@ -38,13 +38,13 @@ function Home() {
 
           <div className='mt-8 flex justify-center space-x-6'>
             <a href='https://www.linkedin.com/in/nayna-bisht-830b2630b/' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faLinkedin} className='hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300 text-2xl text-gray-900' />
+              <FontAwesomeIcon icon={faLinkedin} className='text-[#0e76a8] hover:cursor-pointer ease-in-out hover:scale-125 transition-all duration-300 text-3xl' />
             </a>
             <a href='https://github.com/NaynaBisht' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faGithub} className='hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300 text-2xl text-gray-900' />
+              <FontAwesomeIcon icon={faGithub} className='hover:text-[#211F1F] hover:cursor-pointer ease-in-out hover:scale-125 transition-all duration-300 text-3xl' />
             </a>
             <a href='https://www.instagram.com/nayna_bisht/?next=%2Fexplore%2F' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faInstagram} className='hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300 text-2xl text-gray-900' />
+              <FontAwesomeIcon icon={faInstagram} className='text-[#E4405F] hover:cursor-pointer ease-in-out hover:scale-125 transition-all duration-300 text-3xl' />
             </a>
           </div>
         </div>

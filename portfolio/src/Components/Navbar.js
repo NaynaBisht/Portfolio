@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import image from '../assets/NB_Monogram_Logo-removebg-preview.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -14,11 +15,25 @@ function Navbar() {
         {/* Desktop Menu */}
         <div className='hidden md:flex'>
           <ul className='flex gap-10 mr-20'>
-            <li className=' text-slate-600 font-medium text-lg transition-all ease-in-out hover:scale-110 cursor-pointer'>Home</li>
-            <li className=' text-slate-600 font-medium text-lg transition-all ease-in-out hover:scale-110 cursor-pointer'>About</li>
-            <li className=' text-slate-600 font-medium text-lg transition-all ease-in-out hover:scale-110 cursor-pointer'>Skills</li>
-            <li className=' text-slate-600 font-medium text-lg transition-all ease-in-out hover:scale-110 cursor-pointer'>Portfolio</li>
-            <li className=' text-slate-600 font-medium text-lg transition-all ease-in-out hover:scale-110 cursor-pointer'>Contact</li>
+            <ScrollLink to="home" smooth={true} duration={2000}>
+              <li className=' text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer'>Home</li>
+            </ScrollLink>
+            <ScrollLink to="about" smooth={true} duration={2000}>
+              <li className=' text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer'>About</li>
+            </ScrollLink>
+            <ScrollLink to="skills" smooth={true} duration={2000}>
+              <li className=' text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer'>Skills</li>
+            </ScrollLink>
+            <ScrollLink to="projects" smooth={true} duration={2000}>
+              <li className=' text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer'>Projects</li>
+            </ScrollLink>
+            
+            <ScrollLink to="contact" smooth={true} duration={2000}>
+              <li className='text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer'>
+                Contact
+              </li>
+            </ScrollLink>
+
           </ul>
         </div>
 

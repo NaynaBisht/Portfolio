@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  }, []);
   return (
-    <div className="p-4 sm:p-8">
+    <div className="p-4 sm:p-8" id="contact">
       <div className='flex flex-col lg:flex-row bg-[#abcd85] mx-auto rounded-3xl w-full lg:w-[80%] items-center justify-between p-6 lg:p-8'>
         
         {/* Left Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0" data-aos="fade-right">
           <FontAwesomeIcon icon={faEnvelope} className="text-5xl mb-4 lg:mb-6" style={{ color: "black" }} />
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 tracking-wide">
             Get in Touch
@@ -16,7 +24,7 @@ function Contact() {
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Have a project or idea in mind? 
             <br />
-            <span className="text-lime-700 text-lg sm:text-xl font-bold">Let’s collaborate</span> and create something extraordinary! 
+            <span className="text-lime-900 text-xl sm:text-xl font-extrabold">Let’s collaborate</span> and create something extraordinary! 
             <br /><br />
             Questions, ideas, or collaborations – 
             <br />
@@ -25,7 +33,7 @@ function Contact() {
         </div>
 
         {/* Right Section (Form) */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2" data-aos="fade-up">
           <form className="max-w-full mx-auto lg:max-w-lg p-4 lg:p-6">
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
               
