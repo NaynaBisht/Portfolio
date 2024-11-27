@@ -15,7 +15,8 @@
     /* @apply font-['Poppins']; */
     @apply font-['Lora'];
     margin: 0;
-    background-color: rgb(235, 232, 225);
+    /* background-color: rgb(235, 232, 225); */
+    background-color: rgb(235, 226, 204);
     
     /* background-color: #EAD6A6; */
     
