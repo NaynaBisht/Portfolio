@@ -28,12 +28,22 @@ function Home() {
 
         <div className='mt-6'>
           <div className='flex gap-5 justify-center items-center flex-wrap'>
-            <button className='bg-lime-600 rounded-full text-white font-bold px-6 py-2  hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300'>
+          <a href="https://drive.google.com/file/d/1AUoEss2kBxsM9mWWg-0WFjw-CrZZC4bC/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <button className='bg-lime-600 rounded-full text-white font-bold px-6 py-2 hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300'>
               View Resume
             </button>
-            <button className='border-4 border-yellow-600 text-yellow-600 rounded-full font-bold  px-6 py-2 ml-4 hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300'>
+          </a>
+
+            <button
+              onClick={() => {
+                // Scroll to the 'projects' section smoothly
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+              }}
+              className='border-4 border-yellow-600 text-yellow-600 rounded-full font-bold px-6 py-2 ml-4 hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300'
+            >
               View Projects
             </button>
+
           </div>
 
           <div className='mt-8 flex justify-center space-x-6'>

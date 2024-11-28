@@ -11,8 +11,10 @@ function Contact() {
       duration: 3000,
     });
   }, []);
+
   return (
-    <div className="p-4 sm:p-8" id="contact">
+    
+    <div className="p-4 mt-28 sm:p-8" id="contact">
       <div className='flex flex-col lg:flex-row bg-[#abcd85] mx-auto rounded-3xl w-full lg:w-[80%] items-center justify-between p-6 lg:p-8'>
         
         {/* Left Section */}

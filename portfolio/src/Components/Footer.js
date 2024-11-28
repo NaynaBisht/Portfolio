@@ -43,9 +43,13 @@ function Footer() {
           </a>
         </div>
 
-        <div className="mt-4 text-white text-xs">
+        <div className="mt-4 text-white text-xs text-center">
           <p>&copy; 2024 Nayna Bisht. All rights reserved.</p>
+          <p className="mt-1">
+            Contact: <a href="mailto:naynabisht241@gmail.com" className="hover:underline text-blue-400">naynabisht241@gmail.com</a>
+          </p>
         </div>
+
       </div>
     </div>
 

@@ -15,7 +15,7 @@ function Navbar() {
       {/* Desktop Menu */}
       <div className='hidden md:flex'>
         <ul className='flex gap-10 mr-20'>
-          {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
+          {['home', 'about', 'skills', 'experience', 'projects', 'contact'].map((section) => (
             <ScrollLink key={section} to={section} smooth={true} duration={1000}>
               <li className='text-slate-600 font-bold text-2xl transition-all ease-in-out hover:scale-110 cursor-pointer capitalize'>
                 {section}
@@ -40,7 +40,7 @@ function Navbar() {
       {toggle && (
         <div className='md:hidden absolute top-full right-0 w-full bg-white rounded-lg shadow-lg mt-2'>
           <ul className='flex flex-col items-center gap-6 py-4'>
-            {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
+            {['home', 'about', 'skills', 'experience', 'projects', 'contact'].map((section) => (
               <ScrollLink key={section} to={section} smooth={true} duration={1000} onClick={() => setToggle(false)}>
                 <li className='text-slate-600 font-bold text-xl hover:scale-110 transition-all capitalize'>
                   {section}

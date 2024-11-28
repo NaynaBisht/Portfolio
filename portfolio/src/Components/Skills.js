@@ -43,8 +43,8 @@ const Skills = () => {
   return (
     <div className="mt-28 mb-20" id="skills">
       <div className="flex flex-row justify-center items-center" data-aos="fade-left">
-        <img src={skill} className="w-[70px] hover:animate-bounce" alt="Skills Icon" />
-        <h1 className="text-[40px] font-bold">Skills <span className="text-gray-600">& Tools</span></h1>
+        <img src={skill} className="w-[70px]" alt="Skills Icon" />
+        <h1 className="text-[40px] font-bold hover:scale-105 transition-transform duration-300">Skills <span className="text-gray-600 hover:scale-105 transition-transform duration-300">& Tools</span></h1>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 px-8" data-aos="fade-right">
         {skillLogos.map((skill, index) => (
