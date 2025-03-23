@@ -28,7 +28,7 @@ function Home() {
 
         <div className='mt-6'>
           <div className='flex gap-5 justify-center items-center flex-wrap'>
-          <a href="https://drive.google.com/file/d/1AUoEss2kBxsM9mWWg-0WFjw-CrZZC4bC/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1VTsa48_pg7PIjy45Eimly2kmGQ9XQVoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <button className='bg-lime-600 rounded-full text-white font-bold px-6 py-2 hover:cursor-pointer ease-in-out hover:scale-110 transition-all duration-300'>
               View Resume
             </button>
